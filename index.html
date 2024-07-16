@@ -1,47 +1,36 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Style Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <h1> My blog</h1>
-  <div> <h2>1st heading</h2>
-    <p>
-    zjsnbajcas ascdbjads <strong>sjdabas dfbdk dsafdas</strong>jsabcajs asjcbnuweob wecvbiecwbx uiwebwe weubuweicnxwa w cwebkwewa 
-  </p>
-    <h3> 2nd Heading</h3><p>
-      fewd wefbweiunc weduxnweiwem <em>dsajhabs asuibw webdw</em>wecuibueiwbew wucebuewocwe iuwbwemwen wei wecbwew
-  </p></div>
-  <h2> Unordered and ordered lists</h2>
-  <h3> Unordered list for favourite foods</h3>
-  <ul>
-    <li>Apple</li>
-    <li>Maggi</li>
-    <li>Pasta</li>
-  </ul>
-  <h3> Ordered list for things you need to get done today</h3>
-  <ol>
-    <li> STudy Basic, Structural analysis and pipe and open channel</li>
-    <li> complete this replit project</li>
-  </ol>
-  <h3>Unordered list of places you will visit someday </h3>
-  <ul>
-    <li>Japan</li>
-    <li>Taiwan</li>
-    <li> Sweden</li>
-  </ul>
-  <h3> Ordered list of your top 5 Video Games</h3>
-  <ol>
-    <li>GTA 5</li>
-    <li>Gta vice city</li>
-    <li>CSR Racing</li>
-  </ol>
-  <script src="script.js"></script>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="button" onclick="clearDisplay()">AC</button>
+            <button class="button" onclick="inputOperator('+/-')">±</button>
+            <button class="button" onclick="inputOperator('%')">%</button>
+            <button class="button operator" onclick="setOperation('/')">÷</button>
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button operator" onclick="setOperation('*')">×</button>
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button operator" onclick="setOperation('-')">−</button>
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button operator" onclick="setOperation('+')">+</button>
+            <button class="button zero" onclick="appendNumber('0')">0</button>
+            <button class="button" onclick="appendDecimal()">.</button>
+            <button class="button operator" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
